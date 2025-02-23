@@ -1,0 +1,48 @@
+# Actionable AI
+
+## Overview
+
+Actionable AI is a system that generates detailed reports with actionable recommendations based on user reviews and feedback. The goal is to provide businesses with insights and steps to improve customer experience. The reports are generated once a week, factoring in changing reviews, and are displayed in a Streamlit app.
+
+## Features
+
+- **User Reviews**: Collects user reviews, ratings, and dates.
+- **Reports**: Generates weekly reports with detailed recommendations.
+- **Current Report**: Maintains a single, constantly updated report.
+- **Streamlit Integration**: Displays the generated reports in a Streamlit app.
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/ReaganBuster/Actionable-Ai.git
+    cd actionable_ai
+    ```
+
+2. Create a virtual environment and activate it:
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+
+3. Install the required packages:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Database Setup
+
+1. Create the SQLite database and tables:
+    ```bash
+    python app/database_setup.py
+    ```
+
+## Environment Variables
+
+Create a `.env` file in the root directory and add the following environment variables:
+
+```plaintext
+openai-apikey=your_openai_api_key
+sender_email=your_email@example.com
+receiver_email=receiver_email@example.com
+password=your_email_password
